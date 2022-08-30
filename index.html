@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK-DATE</title>
+</hek%DATE
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Secular+One&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: 'DynaPuff', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('./img/black.jpg')
+    }
+</style>
+
+<body>
+
+    <nav class="navbar-bg">
+        <div class="container-fluid">
+            <img src="./img/00414-time-01.png" alt="">
+            CLOCKER
+        </div>
+    </nav>
+    <div class="left">
+
+        <img src="./img/ind logo.jpg" alt="ind">
+    </div>
+    <div class="container">
+        <h1 class="display-4">Current Time: <span id="Time"></span> </h1>
+    </div>
+    <script>
+        let a;
+        let date;
+        let time;
+        let day;
+        const opt = { year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            let date = a.toLocaleDateString(undefined, opt);
+            let day = a.toLocaleString(undefined, { weekday: 'long' });
+            let time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('Time').innerHTML = time + "  on "  + day +"<br>"+ date;
+
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

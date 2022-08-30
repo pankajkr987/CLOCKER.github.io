@@ -1,0 +1,46 @@
+
+  /*css reset*/
+  body {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+
+}
+.container{
+    font-family: 'Secular One', sans-serif;
+    display: block;
+    font-size: xx-large;
+    padding: 11px 14px;
+    margin: -209px 293px;
+    width: 58%; 
+    
+}
+.display-4{
+    color: brown;
+}
+#Time{
+    color: goldenrod;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: white;
+
+}
+
+.left img{
+    border: 2px solid black;
+object-fit: contain;
+width: 101px;
+height: 75px;
+margin: 140px 300px;
+
+}
+.container-fluid img{
+height: 30px;
+width: 25px;
+margin: 0px auto;
+}
+.navbar-bg{
+background-color: goldenrod;
+}
+
+
